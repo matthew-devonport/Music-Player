@@ -94,6 +94,7 @@
             this.btnSelectSongs.TabIndex = 2;
             this.btnSelectSongs.Text = "Select Songs";
             this.btnSelectSongs.UseVisualStyleBackColor = false;
+            this.btnSelectSongs.Click += new System.EventHandler(this.btnSelectSongs_Click);
             // 
             // WindowsMediaPlayerMusic
             // 

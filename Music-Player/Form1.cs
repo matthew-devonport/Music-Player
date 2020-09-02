@@ -23,8 +23,27 @@ namespace Music_Player
         }
 
         // Create global variables of string type array to save titles of tracks and path
-
         String[] paths, files;
+
+        private void btnSelectSongs_Click(object sender, EventArgs e)
+        {
+            // Code to select songs
+            OpenFileDialog ofd = new OpenFileDialog();
+
+            // Code to select multiple files
+            ofd.Multiselect = true;
+
+            if(ofd.ShowDialog()==System.Windows.Forms.DialogResult.OK)
+            {
+                files = ofd.SafeFileNames; // Save the names of the track in the file array
+                paths = ofd.FileNames; // Save the paths of the tracks in path array
+                // Display the music titles in listbox
+                for (int i = 0; i < files.Length; i++)
+                {
+                    listBoxSongs.Items.Add(files[i]); // Display songs in Listbox
+                }
+            }
+        }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
