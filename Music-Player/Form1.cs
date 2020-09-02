@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AxWMPLib;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,7 +20,8 @@ namespace Music_Player
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            // Code to play music 
+            WindowsMediaPlayerMusic.URL = paths[listBoxSongs.SelectedIndex];
         }
 
         // Create global variables of string type array to save titles of tracks and path
