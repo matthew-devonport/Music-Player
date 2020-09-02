@@ -47,6 +47,21 @@ namespace Music_Player
             }
         }
 
+        private void WindowsMediaPlayerMusic_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MusicPlayerApp_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblLogo_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             // Code to close the App

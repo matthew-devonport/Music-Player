@@ -43,7 +43,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.lblLogo);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -55,12 +55,14 @@
             // lblLogo
             // 
             this.lblLogo.AutoSize = true;
-            this.lblLogo.Font = new System.Drawing.Font("Naowh", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLogo.Font = new System.Drawing.Font("Edo SZ", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLogo.ForeColor = System.Drawing.Color.Maroon;
             this.lblLogo.Location = new System.Drawing.Point(13, 8);
             this.lblLogo.Name = "lblLogo";
-            this.lblLogo.Size = new System.Drawing.Size(134, 16);
+            this.lblLogo.Size = new System.Drawing.Size(196, 21);
             this.lblLogo.TabIndex = 0;
-            this.lblLogo.Text = "Music Player App";
+            this.lblLogo.Text = "Matty Ds Music Player";
+            this.lblLogo.Click += new System.EventHandler(this.lblLogo_Click);
             // 
             // pictureBox1
             // 
@@ -74,7 +76,9 @@
             // 
             // listBoxSongs
             // 
-            this.listBoxSongs.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBoxSongs.BackColor = System.Drawing.SystemColors.InfoText;
+            this.listBoxSongs.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBoxSongs.ForeColor = System.Drawing.Color.Maroon;
             this.listBoxSongs.FormattingEnabled = true;
             this.listBoxSongs.ItemHeight = 16;
             this.listBoxSongs.Location = new System.Drawing.Point(521, 60);
@@ -85,8 +89,8 @@
             // 
             // btnSelectSongs
             // 
-            this.btnSelectSongs.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.btnSelectSongs.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSelectSongs.BackColor = System.Drawing.Color.Maroon;
+            this.btnSelectSongs.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSelectSongs.ForeColor = System.Drawing.SystemColors.Control;
             this.btnSelectSongs.Location = new System.Drawing.Point(521, 377);
             this.btnSelectSongs.Name = "btnSelectSongs";
@@ -102,23 +106,29 @@
             this.WindowsMediaPlayerMusic.Location = new System.Drawing.Point(16, 60);
             this.WindowsMediaPlayerMusic.Name = "WindowsMediaPlayerMusic";
             this.WindowsMediaPlayerMusic.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("WindowsMediaPlayerMusic.OcxState")));
-            this.WindowsMediaPlayerMusic.Size = new System.Drawing.Size(485, 353);
+            this.WindowsMediaPlayerMusic.Size = new System.Drawing.Size(456, 308);
             this.WindowsMediaPlayerMusic.TabIndex = 3;
+            this.WindowsMediaPlayerMusic.Enter += new System.EventHandler(this.WindowsMediaPlayerMusic_Enter);
             // 
             // lblFooter
             // 
             this.lblFooter.AutoSize = true;
+            this.lblFooter.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblFooter.Font = new System.Drawing.Font("Edo SZ", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFooter.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lblFooter.Location = new System.Drawing.Point(321, 428);
+            this.lblFooter.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.lblFooter.Location = new System.Drawing.Point(302, 428);
             this.lblFooter.Name = "lblFooter";
-            this.lblFooter.Size = new System.Drawing.Size(170, 13);
+            this.lblFooter.Size = new System.Drawing.Size(200, 12);
             this.lblFooter.TabIndex = 4;
-            this.lblFooter.Text = "Developed by Matthew Devonport";
+            this.lblFooter.Text = "Developed by Matthew Devonport 2020";
             // 
             // MusicPlayerApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.lblFooter);
             this.Controls.Add(this.WindowsMediaPlayerMusic);
@@ -129,6 +139,7 @@
             this.Name = "MusicPlayerApp";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Music Player App";
+            this.Load += new System.EventHandler(this.MusicPlayerApp_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
