@@ -16,5 +16,16 @@ namespace Music_Player
         {
             InitializeComponent();
         }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            // Code to close the App
+            this.Close();
+        }
     }
 }
