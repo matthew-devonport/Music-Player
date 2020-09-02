@@ -55,21 +55,22 @@
             // lblLogo
             // 
             this.lblLogo.AutoSize = true;
-            this.lblLogo.Font = new System.Drawing.Font("Edo SZ", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLogo.Font = new System.Drawing.Font("Edo SZ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLogo.ForeColor = System.Drawing.Color.Maroon;
-            this.lblLogo.Location = new System.Drawing.Point(13, 8);
+            this.lblLogo.Location = new System.Drawing.Point(6, 8);
             this.lblLogo.Name = "lblLogo";
-            this.lblLogo.Size = new System.Drawing.Size(196, 21);
+            this.lblLogo.Size = new System.Drawing.Size(233, 27);
             this.lblLogo.TabIndex = 0;
-            this.lblLogo.Text = "Matty Ds Music Player";
+            this.lblLogo.Text = "Mattys Media Player";
             this.lblLogo.Click += new System.EventHandler(this.lblLogo_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Music_Player.Properties.Resources.icons8_close_window_48;
-            this.pictureBox1.Location = new System.Drawing.Point(752, -3);
+            this.pictureBox1.Location = new System.Drawing.Point(762, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(48, 46);
+            this.pictureBox1.Size = new System.Drawing.Size(38, 35);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
@@ -114,12 +115,12 @@
             // 
             this.lblFooter.AutoSize = true;
             this.lblFooter.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblFooter.Font = new System.Drawing.Font("Edo SZ", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFooter.Font = new System.Drawing.Font("Edo SZ", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFooter.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.lblFooter.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.lblFooter.Location = new System.Drawing.Point(302, 428);
+            this.lblFooter.Location = new System.Drawing.Point(282, 428);
             this.lblFooter.Name = "lblFooter";
-            this.lblFooter.Size = new System.Drawing.Size(200, 12);
+            this.lblFooter.Size = new System.Drawing.Size(216, 14);
             this.lblFooter.TabIndex = 4;
             this.lblFooter.Text = "Developed by Matthew Devonport 2020";
             // 
