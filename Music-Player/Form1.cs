@@ -22,6 +22,10 @@ namespace Music_Player
 
         }
 
+        // Create global variables of string type array to save titles of tracks and path
+
+        String[] paths, files;
+
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             // Code to close the App
